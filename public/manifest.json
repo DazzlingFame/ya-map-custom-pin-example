@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Custom Pin Example",
+  "name": "Custom React Yandex Maps Pin example",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Map } from "./components/Map";
+import { MOCK_MAP_DATA } from "./mockMapData";
+import styled from "styled-components";
+
+const AppContainer = styled.div`
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <Map data={MOCK_MAP_DATA} />
+    </AppContainer>
   );
 }
 
